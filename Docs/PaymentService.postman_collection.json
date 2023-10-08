@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "6ec7a2f1-67ae-4895-88a6-f012f50611c8",
+		"name": "PaymentService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30340688"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": 345,\r\n    \"paymentDate\": \"2023-10-16\",\r\n    \"paymentType\": \"Cash\",\r\n    \"amount\": 600.50,\r\n    \"customerId\": 890,\r\n    \"employeeId\": 45153637,\r\n    \"transactionId\": \"TXN124\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST for New Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": 345,\r\n    \"paymentDate\": \"2023-10-16\",\r\n    \"paymentType\": \"Cash\",\r\n    \"amount\": 600.50,\r\n    \"customerId\": 890,\r\n    \"employeeId\": 45153637,\r\n    \"transactionId\": \"TXN124\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
